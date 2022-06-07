@@ -48,6 +48,20 @@ repositories:
       url: https://github.com/ros-drivers/ackermann_msgs.git
       version: ros2
     status: maintained
+  ament_black:
+    release:
+      packages:
+      - ament_black
+      - ament_cmake_black
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/Timple/ament_black-release.git
+      version: 0.1.0-1
+    source:
+      type: git
+      url: https://github.com/Timple/ament_black.git
+      version: main
+    status: maintained
   ament_cmake:
     doc:
       type: git
@@ -410,7 +424,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/ros/bond_core.git
-      version: ros2
+      version: galactic
     release:
       packages:
       - bond
@@ -426,7 +440,7 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/ros/bond_core.git
-      version: ros2
+      version: galactic
     status: maintained
   cartographer:
     doc:
@@ -692,6 +706,43 @@ repositories:
       url: https://github.com/ros2/demos.git
       version: galactic
     status: developed
+  depthai:
+    doc:
+      type: git
+      url: https://github.com/luxonis/depthai-core.git
+      version: ros-release
+    release:
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/luxonis/depthai-core-release.git
+      version: 2.15.5-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/luxonis/depthai-core.git
+      version: ros-release
+    status: developed
+  depthai-ros:
+    doc:
+      type: git
+      url: https://github.com/luxonis/depthai-ros.git
+      version: ros-release
+    release:
+      packages:
+      - depthai-ros
+      - depthai_bridge
+      - depthai_examples
+      - depthai_ros_msgs
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/luxonis/depthai-ros-release.git
+      version: 2.5.2-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/luxonis/depthai-ros.git
+      version: ros-release
+    status: developed
   depthimage_to_laserscan:
     doc:
       type: git
@@ -784,6 +835,90 @@ repositories:
       url: https://github.com/ROBOTIS-GIT/DynamixelSDK.git
       version: galactic-devel
     status: developed
+  ecl_core:
+    doc:
+      type: git
+      url: https://github.com/stonier/ecl_core.git
+      version: release/1.2.x
+    release:
+      packages:
+      - ecl_command_line
+      - ecl_concepts
+      - ecl_containers
+      - ecl_converters
+      - ecl_core
+      - ecl_core_apps
+      - ecl_devices
+      - ecl_eigen
+      - ecl_exceptions
+      - ecl_filesystem
+      - ecl_formatters
+      - ecl_geometry
+      - ecl_ipc
+      - ecl_linear_algebra
+      - ecl_manipulators
+      - ecl_math
+      - ecl_mobile_robot
+      - ecl_mpl
+      - ecl_sigslots
+      - ecl_statistics
+      - ecl_streams
+      - ecl_threads
+      - ecl_time
+      - ecl_type_traits
+      - ecl_utilities
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/yujinrobot-release/ecl_core-release.git
+      version: 1.2.0-1
+    source:
+      type: git
+      url: https://github.com/stonier/ecl_core.git
+      version: devel
+    status: maintained
+  ecl_lite:
+    doc:
+      type: git
+      url: https://github.com/stonier/ecl_lite.git
+      version: release/1.1.x
+    release:
+      packages:
+      - ecl_config
+      - ecl_console
+      - ecl_converters_lite
+      - ecl_errors
+      - ecl_io
+      - ecl_lite
+      - ecl_sigslots_lite
+      - ecl_time_lite
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/yujinrobot-release/ecl_lite-release.git
+      version: 1.1.0-1
+    source:
+      type: git
+      url: https://github.com/stonier/ecl_lite.git
+      version: devel
+    status: maintained
+  ecl_tools:
+    doc:
+      type: git
+      url: https://github.com/stonier/ecl_tools.git
+      version: release/1.0.x
+    release:
+      packages:
+      - ecl_build
+      - ecl_license
+      - ecl_tools
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/yujinrobot-release/ecl_tools-release.git
+      version: 1.0.2-1
+    source:
+      type: git
+      url: https://github.com/stonier/ecl_tools.git
+      version: devel
+    status: maintained
   eigen3_cmake_module:
     doc:
       type: git
@@ -977,16 +1112,16 @@ repositories:
   foxglove_msgs:
     doc:
       type: git
-      url: https://github.com/foxglove/ros_foxglove_msgs.git
+      url: https://github.com/foxglove/schemas.git
       version: main
     release:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros2-gbp/ros_foxglove_msgs-release.git
-      version: 1.1.0-1
+      version: 1.2.1-1
     source:
       type: git
-      url: https://github.com/foxglove/ros_foxglove_msgs.git
+      url: https://github.com/foxglove/schemas.git
       version: main
     status: maintained
   gazebo_ros2_control:
@@ -1001,7 +1136,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros2-gbp/gazebo_ros2_control-release.git
-      version: 0.0.7-1
+      version: 0.2.0-1
     source:
       type: git
       url: https://github.com/ros-simulation/gazebo_ros2_control.git
@@ -1285,7 +1420,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros2-gbp/ign_ros2_control-release.git
-      version: 0.4.0-1
+      version: 0.4.1-1
     source:
       type: git
       url: https://github.com/ignitionrobotics/ign_ros2_control.git
@@ -1392,7 +1527,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros2-gbp/imu_tools-release.git
-      version: 2.0.1-1
+      version: 2.0.2-1
     source:
       test_pull_requests: true
       type: git
@@ -1594,7 +1729,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/PickNikRobotics/launch_param_builder-release.git
-      version: 0.1.0-1
+      version: 0.1.1-1
     source:
       type: git
       url: https://github.com/PickNikRobotics/launch_param_builder.git
@@ -1925,7 +2060,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros2-gbp/microstrain_inertial-release.git
-      version: 2.5.1-1
+      version: 2.6.0-1
     source:
       test_pull_requests: true
       type: git
@@ -2070,7 +2205,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros2-gbp/mrpt2-release.git
-      version: 2.4.3-1
+      version: 2.4.8-1
     source:
       type: git
       url: https://github.com/MRPT/mrpt.git
@@ -2183,7 +2318,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/SteveMacenski/navigation2-release.git
-      version: 1.0.9-1
+      version: 1.0.12-1
     source:
       type: git
       url: https://github.com/ros-planning/navigation2.git
@@ -2370,7 +2505,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros-gbp/octomap-release.git
-      version: 1.9.7-1
+      version: 1.9.8-1
     source:
       type: git
       url: https://github.com/octomap/octomap.git
@@ -2418,7 +2553,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros2-gbp/octomap_ros-release.git
-      version: 0.4.2-1
+      version: 0.4.3-1
     source:
       type: git
       url: https://github.com/OctoMap/octomap_ros.git
@@ -2615,6 +2750,24 @@ repositories:
       url: https://github.com/ros-perception/perception_pcl.git
       version: foxy-devel
     status: maintained
+  performance_test:
+    doc:
+      type: git
+      url: https://gitlab.com/ApexAI/performance_test.git
+      version: 1.0.0
+    release:
+      packages:
+      - performance_report
+      - performance_test
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/ros2-gbp/performance_test-release.git
+      version: 1.0.0-1
+    source:
+      type: git
+      url: https://gitlab.com/ApexAI/performance_test.git
+      version: master
+    status: maintained
   performance_test_fixture:
     release:
       tags:
@@ -2674,7 +2827,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/facontidavide/plotjuggler-release.git
-      version: 3.4.2-1
+      version: 3.4.4-1
     source:
       type: git
       url: https://github.com/facontidavide/PlotJuggler.git
@@ -2770,6 +2923,36 @@ repositories:
       type: git
       url: https://github.com/fmrico/popf.git
       version: galactic-devel
+    status: maintained
+  pose_cov_ops:
+    doc:
+      type: git
+      url: https://github.com/mrpt-ros-pkg/pose_cov_ops.git
+      version: master
+    release:
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/ros2-gbp/pose_cov_ops-release.git
+      version: 0.3.4-1
+    source:
+      type: git
+      url: https://github.com/mrpt-ros-pkg/pose_cov_ops.git
+      version: master
+    status: maintained
+  py_trees_ros_interfaces:
+    doc:
+      type: git
+      url: https://github.com/splintered-reality/py_trees_ros_interfaces.git
+      version: release/2.0.x
+    release:
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/stonier/py_trees_ros_interfaces-release.git
+      version: 2.0.3-1
+    source:
+      type: git
+      url: https://github.com/splintered-reality/py_trees_ros_interfaces.git
+      version: devel
     status: maintained
   pybind11_vendor:
     doc:
@@ -3578,7 +3761,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros2-gbp/rmw_gurumdds-release.git
-      version: 2.2.0-2
+      version: 2.3.0-1
     source:
       type: git
       url: https://github.com/ros2/rmw_gurumdds.git
@@ -3675,7 +3858,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros2-gbp/ros2_control-release.git
-      version: 1.5.0-1
+      version: 1.5.1-1
     source:
       type: git
       url: https://github.com/ros-controls/ros2_control.git
@@ -4040,7 +4223,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros2-gbp/rosbridge_suite-release.git
-      version: 1.1.2-1
+      version: 1.2.0-1
     source:
       type: git
       url: https://github.com/RobotWebTools/rosbridge_suite.git
@@ -4195,7 +4378,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros2-gbp/rosidl_typesupport_gurumdds-release.git
-      version: 2.1.0-2
+      version: 2.1.1-1
     source:
       type: git
       url: https://github.com/ros2/rosidl_typesupport_gurumdds.git
@@ -4299,7 +4482,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/ros-visualization/rqt_common_plugins.git
-      version: ros2
+      version: galactic
     release:
       tags:
         release: release/galactic/{package}/{version}
@@ -4308,7 +4491,7 @@ repositories:
     source:
       type: git
       url: https://github.com/ros-visualization/rqt_common_plugins.git
-      version: ros2
+      version: galactic
     status: maintained
   rqt_console:
     doc:
@@ -4772,7 +4955,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/septentrio-users/septentrio_gnss_driver_ros2-release.git
-      version: 1.2.0-5
+      version: 1.2.1-1
     source:
       test_pull_requests: true
       type: git
@@ -4932,6 +5115,21 @@ repositories:
       url: https://github.com/OUXT-Polaris/sol_vendor.git
       version: main
     status: developed
+  sophus:
+    doc:
+      type: git
+      url: https://github.com/stonier/sophus.git
+      version: release/1.2.x
+    release:
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/yujinrobot-release/sophus-release.git
+      version: 1.2.1-1
+    source:
+      type: git
+      url: https://github.com/stonier/sophus.git
+      version: release/1.2.x
+    status: maintained
   spatio_temporal_voxel_layer:
     doc:
       type: git
@@ -5033,11 +5231,10 @@ repositories:
       - system_modes
       - system_modes_examples
       - system_modes_msgs
-      - test_launch_system_modes
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros2-gbp/system_modes-release.git
-      version: 0.9.0-1
+      version: 0.9.0-3
     source:
       test_pull_requests: true
       type: git
@@ -5357,6 +5554,46 @@ repositories:
       url: https://github.com/turtlebot/turtlebot4_desktop.git
       version: galactic
     status: developed
+  turtlebot4_examples:
+    doc:
+      type: git
+      url: https://github.com/turtlebot/turtlebot4_examples.git
+      version: galactic
+    release:
+      packages:
+      - turtlebot4_cpp_examples
+      - turtlebot4_examples
+      - turtlebot4_python_examples
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/ros2-gbp/turtlebot4_examples-release.git
+      version: 0.1.0-1
+    source:
+      type: git
+      url: https://github.com/turtlebot/turtlebot4_examples.git
+      version: galactic
+    status: developed
+  turtlebot4_robot:
+    doc:
+      type: git
+      url: https://github.com/turtlebot/turtlebot4_robot.git
+      version: galactic
+    release:
+      packages:
+      - turtlebot4_base
+      - turtlebot4_bringup
+      - turtlebot4_diagnostics
+      - turtlebot4_robot
+      - turtlebot4_tests
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/ros2-gbp/turtlebot4_robot-release.git
+      version: 0.1.2-1
+    source:
+      type: git
+      url: https://github.com/turtlebot/turtlebot4_robot.git
+      version: galactic
+    status: developed
   turtlebot4_simulator:
     doc:
       type: git
@@ -5371,10 +5608,29 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros2-gbp/turtlebot4_simulator-release.git
-      version: 0.1.0-1
+      version: 0.1.1-1
     source:
       type: git
       url: https://github.com/turtlebot/turtlebot4_simulator.git
+      version: galactic
+    status: developed
+  turtlebot4_tutorials:
+    doc:
+      type: git
+      url: https://github.com/turtlebot/turtlebot4_tutorials.git
+      version: galactic
+    release:
+      packages:
+      - turtlebot4_cpp_tutorials
+      - turtlebot4_python_tutorials
+      - turtlebot4_tutorials
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/ros2-gbp/turtlebot4_tutorials-release.git
+      version: 0.1.0-1
+    source:
+      type: git
+      url: https://github.com/turtlebot/turtlebot4_tutorials.git
       version: galactic
     status: developed
   turtlesim:
@@ -5402,7 +5658,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros2-gbp/tvm_vendor-release.git
-      version: 0.8.0-1
+      version: 0.8.2-1
     source:
       type: git
       url: https://github.com/autowarefoundation/tvm_vendor.git
@@ -5899,7 +6155,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/cyberbotics/webots_ros2.git
-      version: rolling
+      version: master
     release:
       packages:
       - webots_ros2
@@ -5918,7 +6174,7 @@ repositories:
       tags:
         release: release/galactic/{package}/{version}
       url: https://github.com/ros2-gbp/webots_ros2-release.git
-      version: 1.2.2-1
+      version: 1.2.3-1
     source:
       test_pull_requests: true
       type: git
@@ -5952,5 +6208,20 @@ repositories:
       url: https://github.com/ros2/yaml_cpp_vendor.git
       version: galactic
     status: maintained
+  zmqpp_vendor:
+    doc:
+      type: git
+      url: https://github.com/tier4/zmqpp_vendor.git
+      version: main
+    release:
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/tier4/zmqpp_vendor-release.git
+      version: 0.0.2-1
+    source:
+      type: git
+      url: https://github.com/tier4/zmqpp_vendor.git
+      version: main
+    status: developed
 type: distribution
 version: 2
